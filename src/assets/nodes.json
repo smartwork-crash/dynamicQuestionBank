@@ -1,0 +1,39 @@
+[
+  {
+      "question":"Can you please verify that I am speaking to [patient name] and that you reside at [address and Zip]?"
+  },
+  {
+      "question":"Patients with Rheumatoid arthritis typically take multiple medications to help them at their best. Are you taking any other medications on a routine basis?"
+  },
+  {
+      "question":"Would you please share how many medications you are currently taking? Please pick one of the following"
+  },
+  {
+      "question":"Are you having any difficulties taking your medication as prescribed?"
+  },
+  {
+      "question":"Which of the following best describes the difficulties that you are having? Please say yes to any that apply to you.Have you had difficulties remembering to take your medications?"
+  },
+  {
+      "question":"Have you had difficulties understanding the directions for taking your medications?"
+  },
+  {
+      "question":"Have you had difficulties affording your medications?"
+  },
+  {
+      "question":"We would be happy to set up refill reminders for your medication. We can provide refill reminders by phone or by text. How would you prefer to be notified?"
+  },
+  {
+      "question":"May I verify that we have the correct phone number for your notification? I have (903)-429-6224 Extension: 903 as your phone number. Is that correct?"
+  },
+  {
+      "question":"Would you like us to do that for you?"
+  },
+  {
+    "question":"Would you like for me to send you this information?"
+},
+{
+    "question":"If yes, can I please validate your address and I will send it to you today."
+}
+
+]

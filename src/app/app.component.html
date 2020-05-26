@@ -1,0 +1,105 @@
+<!-- <mat-grid-list cols = "2" rowheight = "1000">
+    
+  <mat-grid-tile [colspan]="2">
+      <mat-card>
+          <p [treeDrag]="{name: 'first'}" [treeDragEnabled]="true">Drag me!</p>
+          <p [treeDrag]="{name: 'second'}" [treeDragEnabled]="true">Drag me as well!</p>
+      </mat-card>
+      <mat-card>
+          <tree-root
+          [state]="state"
+          [nodes]="nodes"
+          [focused]="true"
+          [options]="options"
+          ></tree-root>
+      </mat-card>
+  </mat-grid-tile>
+
+</mat-grid-list>
+ -->
+<mat-grid-list cols = "5" rowheight = "1000">
+  <mat-grid-tile [colspan]="1">
+      <mat-card>
+          <mat-card-header>
+              <mat-card-title><h2>Services</h2></mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+     
+          <ul>
+              <li *ngFor = "let data of services" (dragover) = "drag($event)" dnd-draggable [dragEnabled]="true" [dragData]="data.service" [dropZones]="['serviceonly']">
+             {{data.service}}
+            </li>
+            </ul>
+           <!-- <div dnd-draggable [dragEnabled]="true"> {{services | json}} </div> -->
+    </mat-card-content>
+      </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="3" [rowspan]="2">
+      <mat-card>
+          <mat-card-header>
+              <mat-card-title><h2>Layout</h2></mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+              <label>Service:</label>
+              <input  dnd-droppable (onDropSuccess)="transferDataSuccess($event)"  value = {{recieve1}} [dropZones]="['serviceonly']"><br><br>
+              <!-- <div class="panel-heading">Place to drop (Items:{{receivedData.length}})</div> -->
+              <label>Starting Script:</label>
+              <input  dnd-droppable (onDropSuccess)="transferDataSuccess1($event)"  value = {{recieve2}} [dropZones]="['scriptonly1']"><br><br>
+              <div>
+                <mat-card>
+                    <label>Question List:</label>
+                  <tree-root
+                  (moveNode)="onMoveNode($event)"
+              [state]="state"
+              [nodes]="Nodequestion"
+              [focused]="true"
+              [options]="options">
+                  </tree-root>
+                </mat-card>
+              </div><br><br>
+              <label>Ending Script:</label>
+              <input #scriptonly2 dnd-droppable (onDropSuccess)="transferDataSuccess2($event)"  value = {{recieve3}} [dropZones]="['scriptonly2']"><br><br><br><br>
+              <button (click) = "makeJson()" style= "float:right"
+              >Submit</button>
+          </mat-card-content>
+       </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1" [rowspan]="2">
+      <mat-card>
+          <mat-card-header>
+              <mat-card-title><h2>Question</h2></mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+        
+          <ul>
+            <li *ngFor = "let row of questions" [treeDragEnabled]="true" [treeDrag]="row">
+           {{row.question}}
+          </li>
+          </ul>
+    
+      </mat-card-content>
+      </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile [colspan]="1">
+      <mat-card>
+          <mat-card-header>
+              <mat-card-title><h2>Scripts</h2></mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <h3>Starting Script</h3>
+            <ul>
+                <li *ngFor = "let info of scripts" dnd-draggable [dragEnabled]="true" [dragData]="info.script" [dropZones]="['scriptonly1','scriptonly2']">
+               {{info.Starting_script}}
+              </li>
+              </ul>
+              <br>
+              <h3>Ending Script</h3>
+            <ul>
+                <li *ngFor = "let info of scripts" dnd-draggable [dragEnabled]="true" [dragData]="info.script" [dropZones]="['scriptonly1','scriptonly2']">
+               {{info.Ending_script}}
+              </li>
+              </ul>
+      </mat-card-content>
+      </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

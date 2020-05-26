@@ -1,0 +1,27 @@
+[
+    {
+        "Starting_script":"I want to take this opportunity to tell you about the services that Southside Pharmacy offers that you may not be aware of. In addition to our very popular free delivery, we also offer auto refills that fill your prescriptions automatically."
+    },
+    {
+        "Ending_script":"Thank you, we will send you a refill reminder 7 days before it is time for your next refill."
+    },
+    {
+        "Starting_script":"This is [caller name] from [Southside Pharmacy or appropriate location name]. May I speak to [patient name]? If patient is unavailable, leave a message with the person answering the phone to have the patient call Southside Pharmacy back and ask specifically for the caller by name. If a voicemail comes on, leave a simple voicemail using the following script. Always follow HIPAA guidelines when leaving messages (No names of medications, disease states or doctors).Voicemail Script Hello, this is [caller name] from Southside Pharmacy or appropriate location name. This is a courtesy call for [patient name] regarding your medications. Please give us a call back at your earliest convenience. Our phone number is call back number and please ask for caller name. Have a great day!If patient is available, use the following script:Hi [patient name]. The reason for my call is that we regularly review our customers’ medication profiles and I noticed that you are taking [medication name(s)]. I’d like to ask you a few questions so that you can take full advantage of our services."
+    },
+    {
+        "Ending_script":"Thank you for being in program…"
+    },
+    {
+        "Starting_script":"Patients with disease state typically take multiple medications to help them control their symptoms. It is recommended that you keep all your medications at one pharmacy, because the Pharmacist will have a complete list of your meds and can check for any interactions between the medications. Full visibility to your medications will also assist us in collaborating with your Doctor(s) regarding medications. From a convenience standpoint, refills become simple to manage when all your medications are filled at one pharmacy. If you would like, we can call any other pharmacies where are filling prescriptions and transfer them here. It is a very simple and easy process, all we need from you is the phone number for the pharmacy. We will take care of the rest."
+    },
+    {
+        "Ending_script":"If answer is “Yes” We will go ahead and transfer all of the prescriptions that you just shared. Thank you, I really appreciate your time today. Please reach out if you have any questions regarding your medications. Enjoy the rest of your day! If answer is “No”  – Ok [patient name], please let us know in the future if you would like to get all your medications from one place and we will be happy to take care of it for you.  Thank you, I really appreciate your time today. Please reach out if you have any questions regarding your medications. Enjoy the rest of your day!"
+    },
+    {
+        "Starting_script":"We would like to provide you with some additional information related to rheumatoid arthritis and how to best manage your symptoms."
+    },
+    {
+        "Ending_script":"Thank you"
+    }
+
+]
